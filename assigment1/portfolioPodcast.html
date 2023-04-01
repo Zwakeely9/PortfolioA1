@@ -1,0 +1,104 @@
+<!-- This is a responsive portfolio page for myself, it will resize itself to multiple screen sizes and highlight my skills as a professional, which will help me apply for internships for next semester-->
+
+<!DOCTYPE html>
+<html>
+<html lang="en">
+
+  <!-- "Head" section, setting up our document and linking to the required CSS. JQuery & JS file -->
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Zehra Wakeely</title>
+        <link rel="stylesheet" href="/style.css">
+        <script src="script.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="dist/css/slimmenu.min.css" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="dist/js/jquery.slimmenu.min.js"></script>
+        
+    </head>
+
+    <!-- "Body" section, containing the main content of the page -->
+
+    <body>
+
+        <div class="container">
+
+            <!-- This is the header section, containing the nav bar and links to sub-pages. I used some jquery that we learned last semester to make it responsive and nested.-->
+
+            <div class="nav">
+                <ul id="navigation" class="slimmenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a>
+                        <ul class="drop_down">
+                            <li><a href="portfolioBranding.html">Restaurant Branding Package</a></li>
+                            <li><a href="portfolioPodcast.html">Podcast Branding Project</a></li>
+                            <li><a href="portfolioLogo.html">Trifecta Logo Project</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="hero">
+
+                <h1>Zehra Wakeely</h1>
+
+            </div>
+
+            <!-- This is the banner section, with a heading for the page and a background video to attrract viewers-->
+
+            <div class="main">
+                <div class="main-content">
+                    <h1>Podcast Production Project</h1>
+
+                    <image src="i&v/podcastSpotifyMockup.jpg" alt="Mockup of podcast art on phone screen" width="800vh">
+                    
+                </div>
+
+                <button type="button" onclick="myFunction()">Learn More</button>
+    
+                <div id="learnMore" class="lmButton" style="display:none;">
+                    <p>This project was to create a podcast branding package for a podcast that we created. I chose to do a podcast that
+                        touched upon struggles of South Asian women.
+                        <br>I created a logo, podcast branding/art, and uploaded the podcast episodes to Spotify/Soundcloud. I used Adobe
+                        Illustrator to create the logo, and Adobe Photoshop to create
+                        <br>the mockup and the color palette. I used Adobe Audition to mix the sound and create the podcast episodes.
+                    </p>
+                </div>
+                
+            </div>
+
+            <!--This is the footer section, containing the copyright information for the page-->
+
+
+            <div class="footer">
+                <p>©2023 Zehra Wakeely</p>
+            </div>
+
+        </div>
+
+        <script>
+
+            $('#navigation').slimmenu(
+                {
+                    resizeWidth: '800',
+                    collapserTitle: 'Main Menu',
+                    animSpeed: 'medium',
+                    easingEffect: null,
+                    indentChildren: false,
+                    childrenIndenter: '&nbsp;'
+                });
+    
+    
+        </script>
+
+    </body>
+
+</html>
